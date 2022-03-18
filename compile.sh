@@ -1,8 +1,8 @@
 #!/bin/bash
-mkdir -p build
+mkdir -p docs
 
 function compile_file() {
-    OUT="build/${1##*/}"
+    OUT="docs/${1##*/}"
     cat template.html <(echo "<article>") $1 <(echo "</article>") > $OUT
 }
 
@@ -11,6 +11,6 @@ do
     compile_file $FILE
 done
 
-cp styles.css build
-cp -r pictures build
-cp -r toplevel/*.txt build
+cp styles.css docs
+cp -r pictures docs
+cp -r toplevel/*.txt docs
