@@ -3,62 +3,34 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Andrew Weller's Website</title>
+<head>
+    <title>Andrew Weller :D</title>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DR5D9XLQVH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DR5D9XLQVH');
+</script>
 <link rel="stylesheet" href="styles.css?v=1.0">
-<link rel="icon" type="image/x-icon" href="pictures/pfp.webp">
+<link rel="icon" type="image/x-icon" href="pictures/headshot_circle.png">
 
-<article>
+<body>
 <header>
-<div height="100px" style="display: flex; width: 100%;">
-
-<table>
-    <tr>
-        <th><h1 style="text-align: left; float: left;">Andrew Weller's Website </h1></th>
-    </tr>
-    <tr><th>
-        <table>
-            <tr>
-                <th><a href="index.html">About</a></th>
-                <th><a href="projects.html">Projects</a></th>
-                <th><a href="contact.html">Contact</a></th>
-            </tr>
-        </table>
-    </th></tr>
-</table>
-</th>
-<div style="flex: max-content;"></div>
-<div style="padding-top: 1em">
-    <a href="https://www.linkedin.com/in/andreww19">
-        <div style="
-            text-align: right; 
-            height: 64px; 
-            width: 64px;
-            background-image: url('pictures/headshot.png');
-            background-size: 64px 64px;">
-            <!-- LinkedIn Logo -->
-            <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                viewBox="0 0 24 24" 
-                data-supported-dps="24x24" 
-                fill="#ffffff" 
-                class="mercado-match" 
-                width="24" 
-                height="24" 
-                focusable="false"
-                style="float: bottom;"
-            >
-                <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
-            </svg>
-        </div>
-    </a>
-</div>
+<div>
+<h1>Andrew Weller :D</h1>
+<a href="index.html">Home</a>
+<a href="projects.html">Projects</a>
+<a href="contact.html">Contact</a>
+<a href="https://www.linkedin.com/in/andreww19">LinkedIn</a>
 </div>
 </header>
 
-<hr>
-
-<!-- END HEADER SECTION -->
 <article>
+
 <h2> gum </h2>
 
 Gum is a project that was long in the making. The short of it is that it is a 3d graphics/game engine using OpenGL inspired by my use of the Godot game engine. <a href=https://www.youtube.com/watch?v=KkaePsm76J0&t=1s>You can view a short video about it here</a>.
@@ -102,7 +74,9 @@ In computer graphics, lighting is basically just figuring out how bright a pixel
 <br><br>
 <b>Diffuse Light</b> gets a little more complicated. This usually a scale factor of the <i>sine</i> of the normal of a surface and the angle at which the light hits it.
 
-<img width=50% src=pictures/light.png>
+<br>
+<img width=100% src=pictures/light.png>
+<br>
 
 Looking at this picture we see a light source in yellow, and two walls in the top right. Intuitively the human brain knows which wall should be brighter. If we were to move the light source ever so slightly up, the bottom facing wall would be receiving almost no light at all. 
 <br><br>
@@ -118,7 +92,8 @@ Think about shining a flashlight directly on a wall, this is the brightest it wi
 <br><br>
 The simplest way to imagine highlights or specular light is to imagine your friend shining a flashlight at a mirror (since every object is essentially a mirror or varying dullness). The spot of the mirror that shows up bright is the spot that you have to look at to look directly into the flashlight.
 
-<img width=50% src=pictures/mirror_light.png>
+<br><br>
+<img width=100% src=pictures/mirror_light.png>
 
 <br><br> 
 The spot where the reflection takes place is where the object will be the most bright. To capture this phenomenon, we must use math. 
@@ -132,7 +107,8 @@ Then we multiply it by some scalar (found experimentally). This results in some 
 
 Finally we sum the three values we just talked about to produce a light value for each pixel. The end result looks like this (screenshot from my engine).
 
-<img width=50% src=pictures/gum_lighting_scrot.png>
+<br><br>
+<img width=100% src=pictures/gum_lighting_scrot.png>
 
 <h2> Math Library </h2>
 
@@ -162,4 +138,6 @@ There's not much complicated about putting this matrix in my library. I pretty m
 <h2> Conclusion </h2>
 
 That about wraps up my write up of the features of this project. Hopefully it has been an interesting read.
+
 </article>
+</body>

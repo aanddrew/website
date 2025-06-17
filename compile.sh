@@ -3,7 +3,7 @@ mkdir -p docs
 
 function compile_file() {
     OUT="docs/${1##*/}"
-    cat template.html <(echo "<article>") $1 <(echo "</article>") > $OUT
+    cat template.html <(echo -e "\n\n<article>\n") $1 <(echo -e "\n</article>\n</body>") > $OUT
 }
 
 for FILE in ./{toplevel,projects}/*.html

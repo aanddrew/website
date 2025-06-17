@@ -41,7 +41,9 @@ In computer graphics, lighting is basically just figuring out how bright a pixel
 <br><br>
 <b>Diffuse Light</b> gets a little more complicated. This usually a scale factor of the <i>sine</i> of the normal of a surface and the angle at which the light hits it.
 
-<img width=50% src=pictures/light.png>
+<br>
+<img width=100% src=pictures/light.png>
+<br>
 
 Looking at this picture we see a light source in yellow, and two walls in the top right. Intuitively the human brain knows which wall should be brighter. If we were to move the light source ever so slightly up, the bottom facing wall would be receiving almost no light at all. 
 <br><br>
@@ -57,7 +59,8 @@ Think about shining a flashlight directly on a wall, this is the brightest it wi
 <br><br>
 The simplest way to imagine highlights or specular light is to imagine your friend shining a flashlight at a mirror (since every object is essentially a mirror or varying dullness). The spot of the mirror that shows up bright is the spot that you have to look at to look directly into the flashlight.
 
-<img width=50% src=pictures/mirror_light.png>
+<br><br>
+<img width=100% src=pictures/mirror_light.png>
 
 <br><br> 
 The spot where the reflection takes place is where the object will be the most bright. To capture this phenomenon, we must use math. 
@@ -71,7 +74,8 @@ Then we multiply it by some scalar (found experimentally). This results in some 
 
 Finally we sum the three values we just talked about to produce a light value for each pixel. The end result looks like this (screenshot from my engine).
 
-<img width=50% src=pictures/gum_lighting_scrot.png>
+<br><br>
+<img width=100% src=pictures/gum_lighting_scrot.png>
 
 <h2> Math Library </h2>
 
